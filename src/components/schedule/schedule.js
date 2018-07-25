@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Gradient from '../gradient';
 
 class Schedule extends Component {
     render() {
