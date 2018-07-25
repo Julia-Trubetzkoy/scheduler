@@ -7,7 +7,7 @@ class Schedule extends Component {
             <div className="schedule">
                 <h1 className="schedule__title">My Schedule</h1>
             </div>
-        )
+        );
     }
 }
 
