@@ -1,4 +1,4 @@
-import React, { Compenent } from 'react';
+import React, { Component } from 'react';
 
 class Gradient extends Component {
     render() {
