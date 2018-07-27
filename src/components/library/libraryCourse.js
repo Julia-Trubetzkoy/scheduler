@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+
 import Icon from '../icon';
 import Arrow from '../arrow';
+import Action from '../action';
 
 class LibraryCourse extends Component {
     render() {
@@ -11,13 +13,13 @@ class LibraryCourse extends Component {
                 { Icon('fas fa-plus-circle', 'library-course__icon') }
                 </div>
                 <Arrow className="library-course__arrow" />
-                {/* action button component */}
+                <Action className="library-course__action"/>
                 <div className="library-course__description">
                     <label>Course Description</label>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
-        )
+        );
     }
 }
 
