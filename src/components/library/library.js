@@ -7,8 +7,16 @@ import LibraryCourse from './libraryCourse';
 
 class Library extends Component {
 
-    componentDidMount() {
+    componentWillMount() {
         this.props.fetchCourses()
+    }
+
+    renderCourses() {
+        const data = this.props.fetchCourses
+
+        return data.map((LibraryCourse, index) => {
+            return <LibraryCourse key={index}/>
+        })
     }
 
     render() {
@@ -18,9 +26,16 @@ class Library extends Component {
                 <LibraryCourse/>
                 <LibraryCourse/>
                 <LibraryCourse/>
+                { this.renderCourses() }
             </div>
         )
     }
 }
 
-export default connect(null, actions)(Library);
+function mapStateToProps(state) {
+    return {
+        courses: state.courses
+    }
+}
+
+export default connect(mapStateToProps, actions)(Library);
