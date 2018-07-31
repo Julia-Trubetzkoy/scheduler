@@ -8,9 +8,9 @@ import ProgressTracker from './progressTracker';
 class Schedule extends Component {
 
     renderCourses() {
-        const data = this.props.renderCourses
+        const data = this.props.courses
 
-        return data.map((this.renderCourses, index) => {
+        return data.map((course, index) => {
             if(course.enrolled) {
                 return <ScheduleCourse {...course} key={index}/>
             }

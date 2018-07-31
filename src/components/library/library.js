@@ -12,9 +12,9 @@ class Library extends Component {
     }
 
     renderCourses() {
-        const data = this.props.fetchCourses
+        const data = this.props.courses
 
-        return data.map((LibraryCourse, index) => {
+        return data.map((course, index) => {
             return <LibraryCourse {...course} key={index}/>
         })
     }
