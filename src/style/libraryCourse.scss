@@ -33,3 +33,44 @@
         grid-column: 1/-1;
     }
 }
+
+.library-course {
+
+    padding: 25px;
+
+    &:hover {
+        background: white;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.21);
+    }
+
+    &__title {
+        color: $color-gray;
+        font-family: $font-lato;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__line {
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    &__icon {
+        color: $color-blue;
+    }
+
+    &__description {
+        label {
+            color: $color-blue;
+            font-family: $font-alegreya;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            color: $color-gray;
+            font-family: $font-lato;
+            font-size: 16px;
+        }
+    }
+}
