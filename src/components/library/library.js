@@ -23,9 +23,6 @@ class Library extends Component {
         return (
             <div className="library">
                 <h1 className="library__title">Course Library</h1>
-                <LibraryCourse/>
-                <LibraryCourse/>
-                <LibraryCourse/>
                 { this.renderCourses() }
             </div>
         )
